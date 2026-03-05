@@ -1,11 +1,12 @@
 import streamlit as st
+from utils.data_processing import data 
 
 st.title("🎈 My new app")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
 
-col_1, col_2 = st.columns([1,10])
+col_1, col_2 = st.columns([10,1])
 
 with col_1:
     st.markdown("Hi!")
@@ -13,3 +14,5 @@ with col_1:
 
 with col_2:
     st.title("Hello??")
+
+st.line_chart(data)

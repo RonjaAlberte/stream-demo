@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 my_number = 1+2
 print(my_number)
 
@@ -5,3 +8,7 @@ my_numbers = [1, 2, 3]
 sorted_numbers = sorted(my_numbers, reverse=True)
 print(sorted_numbers)
 
+data = pd.read_csv("utils/CrimesOnWomenData.csv", sep=",")
+
+print(data.head())
+print(data.tail())
