@@ -8,9 +8,8 @@ my_numbers = [1, 2, 3]
 sorted_numbers = sorted(my_numbers, reverse=True)
 print(sorted_numbers)
 
-def data():
-    data = pd.read_csv("CrimesOnWomenData.csv", sep=",")
-    return data
+data = pd.read_csv("utils/CrimesOnWomenData.csv", sep=";")
 
 print(data.head())
 print(data.tail())
+
