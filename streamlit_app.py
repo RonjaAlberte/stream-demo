@@ -1,15 +1,13 @@
 import streamlit as st
-from utils.data_processing import data, my_numbers
+from utils.data_processing import data
 import plotly.express as px
 
-
-
-st.title("🎈 My new app")
+st.title("🎈 Ronja's app")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Let's start building!"
 )
 
-col_1, col_2 = st.columns([4,6])
+col_1, col_2 = st.columns([2,8])
 
 with col_1:
     st.markdown("Hi!")
