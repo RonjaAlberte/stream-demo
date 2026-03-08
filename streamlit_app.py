@@ -20,7 +20,7 @@ state = st.selectbox("Choose state", data["State"].unique())
 state_df = data[data["State"] == state]
 
 state_df = state_df.set_index("Year")
-
+ 
 fig = px.line(
     state_df,
     x=state_df.index,
@@ -29,4 +29,3 @@ fig = px.line(
 )
 
 st.plotly_chart(fig)
-
